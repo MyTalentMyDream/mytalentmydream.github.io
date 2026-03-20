@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyTalent.MyDream — Discover Hidden Talents, Support Real Dreams</title>
     <meta name="description" content="A free platform showcasing the talents and dreams of underprivileged people in Cebu and beyond. Everyone has a gift — help the world see it.">
-    <meta name="theme-color" content="#4F46E5">
+    <meta name="theme-color" content="#0A0A0F">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap">
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="blob-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
@@ -33,9 +40,12 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg"></div>
         <div class="container hero-content">
-            <h1 class="hero-title">Everyone Has a <span class="gradient-text">Gift</span></h1>
+            <div class="hero-tag">
+                <span class="hero-tag-dot"></span>
+                Free platform for undiscovered talents
+            </div>
+            <h1 class="hero-title">Your Talent<br>Deserves a <span class="gradient-text">Stage</span></h1>
             <p class="hero-subtitle">We build free websites for talented people who can't afford one. Submit your talent and dream — we'll create your own page for the world to see.</p>
             <div class="hero-buttons">
                 <a href="browse.html" class="btn btn-primary">Discover Talents</a>
