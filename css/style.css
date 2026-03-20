@@ -1150,6 +1150,44 @@ body::after {
     color: var(--text-muted);
 }
 
+/* --- Video Send Options --- */
+.video-send-options label {
+    margin-bottom: 8px;
+}
+
+.send-options {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+
+.send-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    border-radius: 12px;
+    background: var(--dark-3);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+    flex: 1;
+    min-width: 200px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.send-option:hover {
+    border-color: var(--neon-blue);
+    box-shadow: var(--glow-blue);
+    transform: translateY(-2px);
+}
+
+.send-icon {
+    font-size: 1.4rem;
+}
+
 .form-agreement {
     margin-bottom: 28px;
 }

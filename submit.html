@@ -97,9 +97,23 @@
                                 <textarea id="talentDescription" name="Talent Description" required rows="4" placeholder="What do you do? How long have you been doing it? What makes it special?"></textarea>
                             </div>
                             <div class="form-group full-width">
-                                <label for="videoLink">Video Link (YouTube, Facebook, TikTok)</label>
+                                <label for="videoLink">Video Link (YouTube, Facebook, TikTok, Google Drive)</label>
                                 <input type="url" id="videoLink" name="Video Link" placeholder="https://...">
-                                <span class="form-hint">Share a video of your talent — this helps people see what you can do</span>
+                                <span class="form-hint">Paste a link to your video. If you don't have one uploaded, you can send it to us directly (see below).</span>
+                            </div>
+                            <div class="form-group full-width video-send-options">
+                                <label>No video link? Send your video directly:</label>
+                                <div class="send-options">
+                                    <a href="https://m.me/MyTalentMyDream" target="_blank" class="send-option">
+                                        <span class="send-icon">💬</span>
+                                        <span>Send via Messenger</span>
+                                    </a>
+                                    <a href="mailto:r.reafil2@gmail.com?subject=Video Submission — MyTalent.MyDream" class="send-option">
+                                        <span class="send-icon">📧</span>
+                                        <span>Send via Email</span>
+                                    </a>
+                                </div>
+                                <span class="form-hint">Record your talent on your phone and send it to us. Include your name so we know who it's from.</span>
                             </div>
                         </div>
                     </div>
@@ -117,11 +131,11 @@
                     </div>
 
                     <div class="form-section">
-                        <h3>Photo</h3>
+                        <h3>Photo & Video</h3>
                         <div class="form-group full-width">
                             <label for="photoLink">Photo Link (Google Drive, Facebook, Imgur)</label>
                             <input type="url" id="photoLink" name="Photo Link" placeholder="https://...">
-                            <span class="form-hint">Upload your photo somewhere and paste the link here. We'll use it for your profile.</span>
+                            <span class="form-hint">Upload your photo somewhere and paste the link here. Or send it via Messenger/Email above.</span>
                         </div>
                     </div>
 
@@ -129,6 +143,13 @@
                         <label class="checkbox-label">
                             <input type="checkbox" id="agreeTerms" required>
                             <span>I agree that my information will be published on MyTalent.MyDream to help me get discovered. I can request removal anytime.</span>
+                        </label>
+                    </div>
+
+                    <div class="form-agreement">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreePost" name="Allow Social Media Posting" value="Yes">
+                            <span>I allow MyTalent.MyDream to post my talent on Facebook, TikTok, and other social media to help more people discover me. (Optional but recommended!)</span>
                         </label>
                     </div>
 
