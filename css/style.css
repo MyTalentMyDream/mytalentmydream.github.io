@@ -1492,6 +1492,61 @@ body::after {
     box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
 }
 
+/* --- Sponsor Appeal --- */
+.sponsor-appeal {
+    padding: 44px;
+    border-radius: var(--radius-lg);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsor-appeal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple), var(--neon-blue));
+}
+
+.sponsor-appeal h2 {
+    color: var(--neon-pink) !important;
+    text-shadow: 0 0 20px rgba(255, 45, 149, 0.3);
+}
+
+.sponsor-quote {
+    margin: 28px 0;
+    padding: 28px 32px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, rgba(255, 45, 149, 0.06), rgba(178, 75, 243, 0.06));
+    border-left: 3px solid var(--neon-pink);
+    position: relative;
+}
+
+.sponsor-quote p {
+    font-size: 1.2rem !important;
+    font-style: italic;
+    color: var(--text) !important;
+    font-weight: 500;
+    line-height: 1.6 !important;
+    margin-bottom: 0 !important;
+}
+
+.sponsor-cta {
+    text-align: center;
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+    .sponsor-appeal {
+        padding: 28px;
+    }
+}
+
 .about-cta {
     text-align: center;
     margin-top: 56px;
