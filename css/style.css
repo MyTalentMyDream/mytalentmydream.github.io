@@ -1514,6 +1514,72 @@ body::after {
     box-shadow: 0 0 8px rgba(0, 212, 255, 0.4);
 }
 
+/* --- Sponsor Ways --- */
+.sponsor-way {
+    display: flex;
+    gap: 24px;
+    padding: 36px;
+    margin-bottom: 24px;
+    border-radius: var(--radius-lg);
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(20px);
+    transition: var(--transition);
+}
+
+.sponsor-way:hover {
+    border-color: rgba(0, 212, 255, 0.2);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.sponsor-way-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background: var(--dark-3);
+    border: 1px solid var(--glass-border);
+}
+
+.sponsor-way-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.2);
+}
+
+.sponsor-way-content p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.sponsor-way-content p strong {
+    color: var(--text);
+}
+
+.sponsor-way-content .btn {
+    margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+    .sponsor-way {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .sponsor-way-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 2.2rem;
+    }
+}
+
 /* --- Sponsor Appeal --- */
 .sponsor-appeal {
     padding: 44px;
